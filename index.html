@@ -11,21 +11,34 @@
 <body>
     <!-- ===== HEADER PREMIUM ===== -->
     <header class="header">
+        <div class="top-bar">
+            <p>FRETE GRÁTIS PARA TODO O BRASIL | 10% OFF NA PRIMEIRA COMPRA | CUPOM: BRUNOAIO</p>
+        </div>
+        
         <div class="header-container">
             <div class="logo">
                 <h1>BRUNO'S<span class="style-text">STYLE</span></h1>
             </div>
             
             <nav class="nav-menu">
-                <a href="#home" class="nav-link active">Início</a>
-                <a href="#produtos" class="nav-link">Produtos</a>
-                <a href="#colecoes" class="nav-link">Coleções</a>
-                <a href="#provador" class="nav-link">Provador Virtual</a>
+                <a href="#novidades" class="nav-link">Novidades</a>
+                <a href="#roupas" class="nav-link">Roupas</a>
+                <a href="#acessorios" class="nav-link">Acessórios</a>
+                <a href="#calcados" class="nav-link">Calçados</a>
                 <a href="#sobre" class="nav-link">Sobre</a>
-                <a href="#contato" class="nav-link">Contato</a>
+                <a href="#sale" class="nav-link sale-link">SALE</a>
             </nav>
 
             <div class="header-actions">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="account-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                </button>
                 <button class="cart-btn" id="cartBtn">
                     <i class="fas fa-shopping-bag"></i>
                     <span class="cart-count" id="cartCount">0</span>
@@ -37,68 +50,111 @@
         </div>
     </header>
 
-    <!-- ===== HERO SECTION COM CARROSSEL ===== -->
+    <!-- ===== HERO SECTION COM CARROSSEL GRANDE ===== -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h2 class="hero-title">Vista sua<span> identidade</span></h2>
-                <p class="hero-subtitle">Moda masculina para quem busca presença e estilo</p>
-                <p class="hero-description">Peças selecionadas com exclusividade para o homem moderno que não passa desapercebido</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="document.getElementById('produtos').scrollIntoView({behavior: 'smooth'})">
-                        Comprar Agora
-                    </button>
-                    <button class="btn btn-secondary" onclick="document.getElementById('colecoes').scrollIntoView({behavior: 'smooth'})">
-                        Conhecer Coleção
-                    </button>
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide active">
+                        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1200&h=600&fit=crop" alt="Coleção Principal">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1552062407-291826ab63fd?w=1200&h=600&fit=crop" alt="Estilo Urban">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1617137984095-74cfe3b55d09?w=1200&h=600&fit=crop" alt="Premium Elegance">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1595777707802-221b3bed891f?w=1200&h=600&fit=crop" alt="Casual Refinado">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1200&h=600&fit=crop" alt="Essencial Collection">
+                    </div>
                 </div>
+
+                <!-- Controles do Carrossel -->
+                <button class="carousel-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
 
-            <div class="hero-carousel">
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <div class="carousel-slide active">
-                            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=700&fit=crop" alt="Modelo 1">
-                            <div class="carousel-label">Coleção Principal</div>
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="https://images.unsplash.com/photo-1552062407-291826ab63fd?w=600&h=700&fit=crop" alt="Modelo 2">
-                            <div class="carousel-label">Estilo Urban</div>
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="https://images.unsplash.com/photo-1617137984095-74cfe3b55d09?w=600&h=700&fit=crop" alt="Modelo 3">
-                            <div class="carousel-label">Premium Elegance</div>
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="https://images.unsplash.com/photo-1595777707802-221b3bed891f?w=600&h=700&fit=crop" alt="Modelo 4">
-                            <div class="carousel-label">Casual Refinado</div>
-                        </div>
-                    </div>
+            <!-- Indicadores -->
+            <div class="carousel-dots" id="carouselDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Controles do Carrossel -->
-                    <button class="carousel-control prev" id="prevSlide">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="carousel-control next" id="nextSlide">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+    <!-- ===== BENEFÍCIOS ===== -->
+    <section class="benefits">
+        <div class="benefits-container">
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-truck"></i>
                 </div>
+                <h4>FRETE GRÁTIS</h4>
+                <p>Para todo o Brasil</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-exchange"></i>
+                </div>
+                <h4>TROCAS FÁCEIS</h4>
+                <p>Até 7 dias para trocar</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h4>ATENDIMENTO PREMIUM</h4>
+                <p>Suporte dedicado</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h4>PAGAMENTO SEGURO</h4>
+                <p>Ambiente 100% seguro</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h4>10% OFF NA 1ª COMPRA</h4>
+                <p>Use o cupom: BRUNOAIO</p>
+            </div>
+        </div>
+    </section>
 
-                <!-- Indicadores do Carrossel -->
-                <div class="carousel-indicators">
-                    <button class="indicator active" data-slide="0"></button>
-                    <button class="indicator" data-slide="1"></button>
-                    <button class="indicator" data-slide="2"></button>
-                    <button class="indicator" data-slide="3"></button>
-                </div>
+    <!-- ===== SEÇÃO DESTACADA ===== -->
+    <section class="featured-section">
+        <div class="featured-content">
+            <div class="featured-text">
+                <p class="featured-label">ESTILO QUE TE REPRESENTA</p>
+                <h2>CONFORTO, QUALIDADE E ATITUDE</h2>
+                <p class="featured-description">Peças selecionadas para homens que vivem intensamente e não abrem mão do estilo.</p>
+                <button class="btn btn-primary">VER NOVOS PRODUTOS</button>
+            </div>
+        </div>
+    </section>
 
-                <!-- Miniaturas do Carrossel -->
-                <div class="carousel-thumbnails">
-                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=100&h=120&fit=crop" class="thumbnail active" alt="Thumb 1">
-                    <img src="https://images.unsplash.com/photo-1552062407-291826ab63fd?w=100&h=120&fit=crop" class="thumbnail" alt="Thumb 2">
-                    <img src="https://images.unsplash.com/photo-1617137984095-74cfe3b55d09?w=100&h=120&fit=crop" class="thumbnail" alt="Thumb 3">
-                    <img src="https://images.unsplash.com/photo-1595777707802-221b3bed891f?w=100&h=120&fit=crop" class="thumbnail" alt="Thumb 4">
-                </div>
+    <!-- ===== CATEGORIAS ===== -->
+    <section class="categories" id="roupas">
+        <div class="categories-container">
+            <div class="categories-header">
+                <h2>CATEGORIAS</h2>
+                <p>Explore nossas categorias e encontre o que combina com você.</p>
+            </div>
+
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categorias serão inseridas via JavaScript -->
             </div>
         </div>
     </section>
@@ -115,8 +171,8 @@
         </div>
     </section>
 
-    <!-- ===== PRODUTOS ===== -->
-    <section class="produtos" id="produtos">
+    <!-- ===== TODOS OS PRODUTOS ===== -->
+    <section class="produtos" id="acessorios">
         <div class="section-header">
             <h2>Todos os Produtos</h2>
             <p>Explore nossa variedade completa</p>
@@ -257,12 +313,12 @@
     <footer class="footer" id="contato">
         <div class="footer-container">
             <div class="footer-section">
-                <h4>Bruno's Style</h4>
+                <h4>BRUNO'S STYLE</h4>
                 <p>Moda masculina premium para quem busca estilo e exclusividade.</p>
             </div>
 
             <div class="footer-section">
-                <h4>Contato</h4>
+                <h4>CONTATO</h4>
                 <p>
                     <i class="fab fa-whatsapp"></i> 
                     <a href="https://wa.me/5541997010228?text=Olá, gostaria de conhecer os produtos da loja." target="_blank">
@@ -276,7 +332,7 @@
             </div>
 
             <div class="footer-section">
-                <h4>Redes Sociais</h4>
+                <h4>REDES SOCIAIS</h4>
                 <div class="social-links">
                     <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
@@ -285,16 +341,16 @@
             </div>
 
             <div class="footer-section">
-                <h4>Links Rápidos</h4>
+                <h4>LINKS RÁPIDOS</h4>
                 <a href="#home">Início</a>
-                <a href="#produtos">Produtos</a>
-                <a href="#provador">Provador Virtual</a>
+                <a href="#roupas">Roupas</a>
+                <a href="#acessorios">Acessórios</a>
                 <a href="#sobre">Sobre</a>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Bruno's Style. Todos os direitos reservados. | Design Premium</p>
+            <p>&copy; 2024 Bruno's Style. Todos os direitos reservados.</p>
         </div>
     </footer>
 

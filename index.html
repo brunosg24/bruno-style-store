@@ -21,6 +21,7 @@
                 <a href="#produtos" class="nav-link">Produtos</a>
                 <a href="#colecoes" class="nav-link">Coleções</a>
                 <a href="#provador" class="nav-link">Provador Virtual</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
                 <a href="#contato" class="nav-link">Contato</a>
             </nav>
 
@@ -36,30 +37,67 @@
         </div>
     </header>
 
-    <!-- ===== HERO SECTION ===== -->
+    <!-- ===== HERO SECTION COM CARROSSEL ===== -->
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <h2 class="hero-title">Vista sua identidade</h2>
+                <h2 class="hero-title">Vista sua<span> identidade</span></h2>
                 <p class="hero-subtitle">Moda masculina para quem busca presença e estilo</p>
+                <p class="hero-description">Peças selecionadas com exclusividade para o homem moderno que não passa desapercebido</p>
                 <div class="hero-buttons">
                     <button class="btn btn-primary" onclick="document.getElementById('produtos').scrollIntoView({behavior: 'smooth'})">
                         Comprar Agora
                     </button>
-                    <button class="btn btn-secondary">
+                    <button class="btn btn-secondary" onclick="document.getElementById('colecoes').scrollIntoView({behavior: 'smooth'})">
                         Conhecer Coleção
                     </button>
                 </div>
             </div>
 
-            <div class="hero-gallery">
-                <div class="gallery-main">
-                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=700&fit=crop" alt="Modelo usando camiseta premium">
+            <div class="hero-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=700&fit=crop" alt="Modelo 1">
+                            <div class="carousel-label">Coleção Principal</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1552062407-291826ab63fd?w=600&h=700&fit=crop" alt="Modelo 2">
+                            <div class="carousel-label">Estilo Urban</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1617137984095-74cfe3b55d09?w=600&h=700&fit=crop" alt="Modelo 3">
+                            <div class="carousel-label">Premium Elegance</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1595777707802-221b3bed891f?w=600&h=700&fit=crop" alt="Modelo 4">
+                            <div class="carousel-label">Casual Refinado</div>
+                        </div>
+                    </div>
+
+                    <!-- Controles do Carrossel -->
+                    <button class="carousel-control prev" id="prevSlide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control next" id="nextSlide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
-                <div class="gallery-side">
-                    <img src="https://images.unsplash.com/photo-1552062407-291826ab63fd?w=250&h=250&fit=crop" alt="Detalhe do look">
-                    <img src="https://images.unsplash.com/photo-1617137984095-74cfe3b55d09?w=250&h=250&fit=crop" alt="Acessório premium">
-                    <img src="https://images.unsplash.com/photo-1595777707802-221b3bed891f?w=250&h=250&fit=crop" alt="Estilo casual">
+
+                <!-- Indicadores do Carrossel -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                    <button class="indicator" data-slide="3"></button>
+                </div>
+
+                <!-- Miniaturas do Carrossel -->
+                <div class="carousel-thumbnails">
+                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=100&h=120&fit=crop" class="thumbnail active" alt="Thumb 1">
+                    <img src="https://images.unsplash.com/photo-1552062407-291826ab63fd?w=100&h=120&fit=crop" class="thumbnail" alt="Thumb 2">
+                    <img src="https://images.unsplash.com/photo-1617137984095-74cfe3b55d09?w=100&h=120&fit=crop" class="thumbnail" alt="Thumb 3">
+                    <img src="https://images.unsplash.com/photo-1595777707802-221b3bed891f?w=100&h=120&fit=crop" class="thumbnail" alt="Thumb 4">
                 </div>
             </div>
         </div>
@@ -100,7 +138,7 @@
     <!-- ===== PROVADOR VIRTUAL ===== -->
     <section class="provador" id="provador">
         <div class="provador-container">
-            <div class="provador-header">
+            <div class="section-header">
                 <h2>Provador Virtual</h2>
                 <p>Experimente antes de comprar</p>
             </div>
@@ -156,7 +194,7 @@
     </section>
 
     <!-- ===== SOBRE A MARCA ===== -->
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="sobre-container">
             <div class="sobre-text">
                 <h2>Mais que roupas, uma identidade</h2>
@@ -248,8 +286,8 @@
 
             <div class="footer-section">
                 <h4>Links Rápidos</h4>
+                <a href="#home">Início</a>
                 <a href="#produtos">Produtos</a>
-                <a href="#colecoes">Coleções</a>
                 <a href="#provador">Provador Virtual</a>
                 <a href="#sobre">Sobre</a>
             </div>

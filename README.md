@@ -1,59 +1,54 @@
 <div align="center">
 
-<img src="assets/cover.svg" alt="Bruno's Style — Moda masculina" width="100%">
+<img src="assets/cover.svg" width="100%" alt="BRUNO'S STYLE — capa do projeto">
 
-# Bruno's Style
-### Experiência digital para moda masculina
+# BRUNO'S STYLE
+### MODA MASCULINA / DIGITAL EXPERIENCE
 
-Uma vitrine virtual de moda masculina construída com HTML, CSS e JavaScript puro. O projeto reúne catálogo por categorias, carrinho no navegador e uma interface responsiva com identidade visual própria.
+Protótipo front-end de loja de moda masculina, com catálogo por categorias, carrinho no navegador, seção demonstrativa de provador virtual e layout responsivo.
 
-[![Acessar repositório](https://img.shields.io/badge/REPOSITÓRIO-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/brunosg24/bruno-style-store)
+[![ABRIR REPOSITÓRIO](https://img.shields.io/badge/ABRIR_REPOSITÓRIO-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brunosg24/bruno-style-store)
+
+![Project](https://img.shields.io/badge/PORTFÓLIO-BRUNO_S.-64748b?style=flat-square)
 
 </div>
 
 ---
 
-## ✦ Visão geral
-A proposta é desenvolver uma experiência de compra simples e agradável, com foco na apresentação dos produtos e na navegação do usuário.
+## ✦ Visão do projeto
 
-## Funcionalidades presentes
-- Catálogo de produtos e categorias.
-- Carrinho de compras com persistência no navegador (localStorage).
-- Seções demonstrativas, incluindo provador virtual.
-- Layout adaptável a diferentes tamanhos de tela.
-- Atalho de contato via WhatsApp.
+Protótipo front-end de loja de moda masculina, com catálogo por categorias, carrinho no navegador, seção demonstrativa de provador virtual e layout responsivo.
 
-## Tecnologias
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=222)
+## ◈ Recursos / escopo
 
-- HTML5, CSS3 e JavaScript.
-- Font Awesome para ícones.
-- Imagens externas do Unsplash.
+Catálogo, carrinho com persistência local, contato via WhatsApp e interface responsiva.
 
-## Como executar
-1. Faça o clone do repositório.
-2. Abra a pasta do projeto.
-3. Execute index.html no navegador.
+## ⌘ Tecnologias
+
+HTML5 · CSS3 · JavaScript · localStorage
+
+## ▶ Começar
 
 ```bash
 git clone https://github.com/brunosg24/bruno-style-store.git
 cd bruno-style-store
 ```
 
-Não é necessário instalar dependências para visualizar a versão atual.
+Abra `index.html` no navegador. A versão atual não exige instalação de dependências.
 
-## Próximas evoluções
-- Integrar uma API e um backend.
-- Criar autenticação e gestão de usuários.
-- Persistir produtos e pedidos em banco de dados.
-- Integrar um meio de pagamento em ambiente de testes.
-- Implementar testes e melhorar acessibilidade.
+## 🧭 Próximos passos
 
-## Status
-**Protótipo front-end em evolução.** O carrinho utiliza armazenamento local; o projeto ainda não possui backend, autenticação real, banco de dados ou processamento de pagamentos.
+- [ ] Evoluir a estrutura e os componentes do projeto.
+- [ ] Melhorar experiência em dispositivos móveis.
+- [ ] Documentar decisões técnicas e arquitetura.
+- [ ] Adicionar testes e validações conforme as funcionalidades forem implementadas.
+
+## ⚑ Status e transparência
+
+Ainda não possui backend, autenticação real, banco de dados ou pagamento integrado.
 
 <div align="center">
-Desenvolvido por **Bruno** · [GitHub](https://github.com/brunosg24)
+
+**BRUNO S.** · [GitHub](https://github.com/brunosg24)
+
 </div>
